@@ -107,17 +107,6 @@ private fun ProfileContent(meals: Meals, containerHeight: Dp) {
     }
 }
 
-@Composable
-private fun Title(
-    meals: Meals
-) {
-    Column(modifier = Modifier.padding(start = 16.dp, end = 16.dp, bottom = 16.dp)) {
-        Title(
-           meals: meals ,
-            modifier = Modifier.baselineHeight(32.dp)
-        )
-    }
-}
 
 @Composable
 private fun Title(meals: Meals, modifier: Modifier = Modifier) {
@@ -130,29 +119,28 @@ private fun Title(meals: Meals, modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun ProfileProperty(label: String, value: String?, isLink: Boolean = false) {
+fun ProfileProperty(label: String, value: String) {
     Column(modifier = Modifier.padding(start = 16.dp, end = 16.dp, bottom = 16.dp)) {
-        Divider()
-        CompositionLocalProvider(LocalContentAlpha provides ContentAlpha.medium) {
-            Text(
-                text = label,
-                modifier = Modifier.baselineHeight(24.dp),
-                style = MaterialTheme.typography.bodySmall,
-            )
-        }
+        Divider(modifier = Modifier.padding(bottom = 10.dp))
+        Text(
+            text = label,
+            modifier = Modifier.height(24.dp),
+            style = MaterialTheme.typography.bodySmall,
+        )
         Box (
             modifier = Modifier
                 .height(30.dp)
                 .verticalScroll(rememberScrollState())
         )
-
         Text(
             text = value,
-            //modifier = Modifier.baselineHeight(24.dp),
-            style =MaterialTheme.typography.bodySmall, overflow = TextOverflow.Visible
-        )
+            //modifier = Modifier.height(100.dp),
+            style = MaterialTheme.typography.bodySmall,
+            overflow = TextOverflow.Visible
+            )
+        }
     }
-}
+
 /*
 @Preview
 @Composable

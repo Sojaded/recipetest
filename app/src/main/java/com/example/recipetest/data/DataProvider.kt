@@ -7,10 +7,11 @@ object DataProvider {
         Meals(
             id= 2,
             title = "Meatballs",
+            cookingInstruction = "Lorem",
             ingredients = 	"1 pound boneless\n"+
                 "skinless chicken thighs cut into 1-inch pieces\n"+
                 "3 ounces pork fat, or fatty bacon, diced\n"+
-        "3 ounces crumbled fresh French breadcrumbs\n"+
+            "3 ounces crumbled fresh French breadcrumbs\n"+
     "⅓ cup sautéed onions (Optional)\n"+
     	"1 large egg, beaten\n"+
     "1 tablespoon white wine\n"+
@@ -21,15 +22,16 @@ object DataProvider {
     "¼ teaspoon chili flakes\n"+
     "¼ teaspoon fennel seeds, crushed\n"+
     "4 cups prepared tomato sauce (Optional)\n"+
-    "olive oil or cooking spray for greasing baking sheet\n"
+    "olive oil or cooking spray for greasing baking sheet\n",
             description = "Easy to eat",
-            mealsImageId = R.drawable.p1
+            mealsImageId = R.drawable.p2
 
         ),
+
         Meals(
             id= 1,
-            title = "Meatballs",
-            description = "Easy to eat",
+            title = "Cupcakes",
+            description = "Easy to cook",
             ingredients = "Cake:\n" +
                     "2 ½ cups flour\n" +
                     "•½ cup unsweetened cocoa powder\n" +
@@ -48,9 +50,9 @@ object DataProvider {
                     "•2 tablespoons sour cream\n" +
                     "•2 teaspoons McCormick® Pure Vanilla Extract\n" +
                     "1 (16 ounce) box confectioners' sugar\n"+
-                    "start cooking\n"
+                    "start cooking\n",
 
-              mealsImageId = R.drawable.p2
+              mealsImageId = R.drawable.p1
         )
     )
 }

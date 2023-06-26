@@ -6,7 +6,7 @@ data class Meals(
     val id: Int,
     val title: String,
     val cookingInstruction: String? =null,
-    val ingredients: List<String> = listOf(),
+    val ingredients: String,
     val description: String,
     val mealsImageId: Int= 0
 ) :Serializable
