@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">recipetest</string>
+    <string name="back">Back</string>
+    <string name="more_options">More</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="adopt_me">Adopt Me</string>
+    <string name="cookingInstruction">cookingInstruction</string>
+    <string name="ingredients">Ingredients</string>
+</resources>
