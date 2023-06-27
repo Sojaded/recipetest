@@ -5,7 +5,7 @@ import com.example.recipetest.R
 object DataProvider {
     val mealsList= listOf(
         Meals(
-            id= 2,
+            id= 1,
             title = "Meatballs",
             cookingInstruction = "Lorem",
             ingredients = 	"1 pound boneless\n"+
@@ -29,7 +29,7 @@ object DataProvider {
         ),
 
         Meals(
-            id= 1,
+            id= 2,
             title = "Cupcakes",
             description = "Easy to cook",
             ingredients = "Cake:\n" +
@@ -51,8 +51,35 @@ object DataProvider {
                     "•2 teaspoons McCormick® Pure Vanilla Extract\n" +
                     "1 (16 ounce) box confectioners' sugar\n"+
                     "start cooking\n",
+            cookingInstruction="lorem",
 
               mealsImageId = R.drawable.p1
+        ),
+        Meals(
+            id = 3,
+            title = "Healthy Air Fryer Parmesan Chicken with Broccoli",
+            description = "This chicken gets incredibly crunchy, thanks to a light coating of panko and Parmesan and a quick cook in the air fryer! Serve it with charred broccoli and a tangy yogurt sauce for a healthy and complete meal you can throw together any day of the week.",
+            ingredients = "1/3 cup panko\n" +
+                    "\n" +
+                    "1/4 cup finely grated Parmesan\n" +
+                    "\n" +
+                    "4 teaspoons olive oil\n" +
+                    "\n" +
+                    "1/2 teaspoon dried oregano\n" +
+                    "\n" +
+                    "Kosher salt and freshly ground black pepper\n" +
+                    "\n" +
+                    "2 small boneless, skinless chicken breasts (about 6 ounces each)\n" +
+                    "\n" +
+                    "1 1/2 tablespoons plus 1/4 teaspoon Dijon mustard\n" +
+                    "\n" +
+                    "2 cups small broccoli florets (about 5 ounces)\n" +
+                    "\n" +
+                    "1/4 cup low-fat plain yogurt\n" +
+                    "\n" +
+                    "Finely grated zest and juice of 1/2 lemon",
+            cookingInstruction = "Lorem",
+            mealsImageId = R.drawable.p3
         )
     )
 }
